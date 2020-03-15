@@ -14,9 +14,10 @@ namespace MyExercises.Controllers
     public class AddController : Controller
     {
         private List<double> defaultList = new List<double>() { 1.0, 2.0, 3.0, 4.0, 5.0 };
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<AddController> _logger;
         public AddController(ILogger<AddController> logger)
         {
+            _logger = logger;
         }
 
         [HttpPost]
